@@ -39,4 +39,18 @@ public class CuttingBoard {
      *      Example: "This cutting board costs $19.99"
      */
 
+    private double price;
+    public CuttingBoard(double price){
+        this.price = price;
+    }
+
+
+    public double getPrice(){
+        return this.price;
+    }
+
+    public String getDescription(){
+        return "This cutting board costs $" + getPrice();
+     }
+
 }

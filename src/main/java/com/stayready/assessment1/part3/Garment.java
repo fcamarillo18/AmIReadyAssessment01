@@ -41,4 +41,30 @@ public class Garment {
      * 2.Create a getter method called "getSize" which return the size.
      *    The return type is String.
      */
+
+    private double price;
+    private String size;
+
+    public Garment(){
+        price = 0;
+        size = "Universal";
+    }
+
+    public Garment(double price){
+        this.price = price;
+        this.size = "Universal";
+    }
+
+    public Garment(double price, String size){
+        this.price = price;
+        this.size = size;
+    }
+
+    public double getPrice(){
+        return this.price;
+    }
+
+    public String getSize(){
+        return this.size;
+    }
 }
